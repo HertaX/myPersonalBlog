@@ -1,0 +1,15 @@
+---
+layout: default
+title: 科研专栏
+permalink: /research/
+---
+
+<h1>科研专栏</h1>
+<ul>
+  {% for post in site.categories.research %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
